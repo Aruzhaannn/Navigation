@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practice3 Navigation</string>
+    <string name="catalog_title">Каталог</string>
+    <string name="details_title">Детали</string>
+    <string name="toggle_fav">В избранное</string>
+    <string name="remove_fav">Убрать из избранного</string>
+</resources>

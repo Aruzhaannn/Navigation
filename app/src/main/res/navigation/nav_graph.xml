@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catalogFragment">
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.practice3nav.ui.fragments.CatalogFragment"
+        android:label="Каталог">
+        <action
+            android:id="@+id/action_catalog_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.practice3nav.ui.fragments.DetailsFragment"
+        android:label="Детали">
+        <argument
+            android:name="itemId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

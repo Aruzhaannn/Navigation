@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+drawable book_image_1
+drawable book_image_2
+drawable book_image_3
+drawable book_image_4
+drawable ic_launcher_background
+id action_catalog_to_details
+id catalogFragment
+id detailsFragment
+id favButton
+id favMark
+id itemDesc
+id itemImage
+id itemPrice
+id itemTitle
+id nav_graph
+id nav_host
+id priceText
+id recycler
+id titleText
+layout activity_main
+layout fragment_catalog
+layout fragment_details
+layout item_catalog
+navigation nav_graph
+string app_name
+string catalog_title
+string details_title
+string remove_fav
+string toggle_fav
+style Theme.Practice3Nav
