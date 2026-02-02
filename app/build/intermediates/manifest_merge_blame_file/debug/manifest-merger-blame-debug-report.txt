@@ -20,35 +20,35 @@
 15-->[androidx.core:core:1.13.1] C:\Users\132\.gradle\caches\transforms-3\8d67a3899390b722993abdad0c2f40ce\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:4:5-19:19
+17-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:4:5-19:19
 18        android:allowBackup="true"
-18-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:5:9-35
+18-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:5:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.13.1] C:\Users\132\.gradle\caches\transforms-3\8d67a3899390b722993abdad0c2f40ce\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 20        android:debuggable="true"
 21        android:extractNativeLibs="false"
 22        android:label="Practice3 Navigation"
-22-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:7:9-45
+22-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:7:9-45
 23        android:supportsRtl="true"
-23-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:6:9-35
+23-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:6:9-35
 24        android:testOnly="true"
 25        android:theme="@style/Theme.Practice3Nav" >
-25-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:8:9-50
+25-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:8:9-50
 26        <activity
-26-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:10:9-17:20
+26-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:10:9-17:20
 27            android:name="com.example.practice3nav.ui.MainActivity"
-27-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:11:13-44
+27-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:11:13-44
 28            android:exported="true" >
-28-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:12:13-36
+28-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:12:13-36
 29            <intent-filter>
-29-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:13:13-16:29
+29-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:13:13-16:29
 30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:14:17-69
-30-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:14:25-66
+30-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:14:17-69
+30-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:14:25-66
 31
 32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:15:17-77
-32-->C:\Users\132\Downloads\Practice3_Navigation_SafeArgs_Kotlin\Practice3_Navigation_SafeArgs_Kotlin\app\src\main\AndroidManifest.xml:15:27-74
+32-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:15:17-77
+32-->C:\Users\132\StudioProjects\Navigation\app\src\main\AndroidManifest.xml:15:27-74
 33            </intent-filter>
 34        </activity>
 35

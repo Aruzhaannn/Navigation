@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.practice3nav.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,14 +22,19 @@ public final class FragmentCatalogBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final MaterialButton btnProfile;
+
+  @NonNull
   public final RecyclerView recycler;
 
   @NonNull
   public final TextView titleText;
 
-  private FragmentCatalogBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView recycler,
+  private FragmentCatalogBinding(@NonNull ConstraintLayout rootView,
+      @NonNull MaterialButton btnProfile, @NonNull RecyclerView recycler,
       @NonNull TextView titleText) {
     this.rootView = rootView;
+    this.btnProfile = btnProfile;
     this.recycler = recycler;
     this.titleText = titleText;
   }
@@ -60,6 +66,12 @@ public final class FragmentCatalogBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnProfile;
+      MaterialButton btnProfile = ViewBindings.findChildViewById(rootView, id);
+      if (btnProfile == null) {
+        break missingId;
+      }
+
       id = R.id.recycler;
       RecyclerView recycler = ViewBindings.findChildViewById(rootView, id);
       if (recycler == null) {
@@ -72,7 +84,8 @@ public final class FragmentCatalogBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCatalogBinding((ConstraintLayout) rootView, recycler, titleText);
+      return new FragmentCatalogBinding((ConstraintLayout) rootView, btnProfile, recycler,
+          titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

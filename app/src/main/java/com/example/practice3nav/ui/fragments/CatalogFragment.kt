@@ -24,9 +24,17 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentCatalogBinding.bind(view)
 
+        // ✅ Profile бетіне өту
+        binding.btnProfile.setOnClickListener {
+            findNavController().navigate(R.id.action_catalog_to_profile)
+        }
+
+        // ✅ Каталог item → Details (SafeArgsсыз, Bundle арқылы)
         adapter = CatalogAdapter { item ->
-            val action = CatalogFragmentDirections.actionCatalogToDetails(itemId = item.id)
-            findNavController().navigate(action)
+            val bundle = Bundle().apply {
+                putInt("itemId", item.id)
+            }
+            findNavController().navigate(R.id.action_catalog_to_details, bundle)
         }
 
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())

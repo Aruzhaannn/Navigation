@@ -1,27 +1,71 @@
 [
     {
-        "merged": "com.example.practice3nav.app-merged_res-49:/drawable_book_image_1.jpg.flat",
-        "source": "com.example.practice3nav.app-main-51:/drawable/book_image_1.jpg"
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\layout_fragment_change_password.xml.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\layout\\fragment_change_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\drawable_book_image_4.jpg.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\drawable\\book_image_4.jpg"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\layout\\fragment_profile.xml"
     },
     {
         "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\layout_fragment_details.xml.flat",
         "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\layout\\fragment_details.xml"
     },
     {
-        "merged": "com.example.practice3nav.app-merged_res-49:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.practice3nav.app-main-51:/drawable/ic_launcher_background.xml"
-    },
-    {
         "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\layout_fragment_catalog.xml.flat",
         "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\layout\\fragment_catalog.xml"
     },
     {
-        "merged": "com.example.practice3nav.app-merged_res-49:/drawable_book_image_4.jpg.flat",
-        "source": "com.example.practice3nav.app-main-51:/drawable/book_image_4.jpg"
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\layout_fragment_edit_profile.xml.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\layout\\fragment_edit_profile.xml"
+    },
+    {
+        "merged": "com.example.practice3nav.app-merged_res-49:/layout_fragment_change_password.xml.flat",
+        "source": "com.example.practice3nav.app-main-51:/layout/fragment_change_password.xml"
+    },
+    {
+        "merged": "com.example.practice3nav.app-merged_res-49:/layout_fragment_notification.xml.flat",
+        "source": "com.example.practice3nav.app-main-51:/layout/fragment_notification.xml"
     },
     {
         "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\navigation_nav_graph.xml.flat",
         "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\layout_fragment_notification.xml.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\layout\\fragment_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\drawable_bg_avatar_circle.xml.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\drawable\\bg_avatar_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\layout_fragment_address.xml.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\layout\\fragment_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\drawable_book_image_1.jpg.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\drawable\\book_image_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\drawable_profile.jpg.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\drawable\\profile.jpg"
+    },
+    {
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\drawable_book_image_2.jpg.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\drawable\\book_image_2.jpg"
+    },
+    {
+        "merged": "com.example.practice3nav.app-merged_res-49:/layout_fragment_address.xml.flat",
+        "source": "com.example.practice3nav.app-main-51:/layout/fragment_address.xml"
     },
     {
         "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\layout_activity_main.xml.flat",
@@ -32,15 +76,7 @@
         "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\layout\\item_catalog.xml"
     },
     {
-        "merged": "com.example.practice3nav.app-merged_res-49:/drawable_book_image_2.jpg.flat",
-        "source": "com.example.practice3nav.app-main-51:/drawable/book_image_2.jpg"
-    },
-    {
-        "merged": "com.example.practice3nav.app-merged_res-49:/drawable_book_image_3.jpg.flat",
-        "source": "com.example.practice3nav.app-main-51:/drawable/book_image_3.jpg"
-    },
-    {
-        "merged": "com.example.practice3nav.app-merged_res-49:/layout_item_catalog.xml.flat",
-        "source": "com.example.practice3nav.app-main-51:/layout/item_catalog.xml"
+        "merged": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-merged_res-49:\\drawable_book_image_3.jpg.flat",
+        "source": "C:\\Users\\132\\.gradle\\daemon\\8.2\\com.example.practice3nav.app-main-51:\\drawable\\book_image_3.jpg"
     }
 ]
