@@ -1,0 +1,76 @@
+<navigation
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/nav_graph"
+app:startDestination="@id/catalogFragment" >
+<fragment
+    android:id="@+id/catalogFragment"
+    android:name="com.example.practice3nav.ui.fragments.CatalogFragment"
+    android:label="Каталог"
+    tools:layout="@layout/fragment_catalog" >
+
+    <!-- Catalog -> Details -->
+    <action
+        android:id="@+id/action_catalog_to_details"
+        app:destination="@id/detailsFragment" />
+
+    <!-- Catalog -> Profile -->
+    <action
+        android:id="@+id/action_catalog_to_profile"
+        app:destination="@id/profileFragment" />
+
+</fragment>
+<fragment
+    android:id="@+id/detailsFragment"
+    android:name="com.example.practice3nav.ui.fragments.DetailsFragment"
+    android:label="Детали"
+    tools:layout="@layout/fragment_details" />
+<fragment
+    android:id="@+id/profileFragment"
+    android:name="com.example.practice3nav.ui.fragments.ProfileFragment"
+    android:label="Profile"
+    tools:layout="@layout/fragment_profile" >
+
+    <!-- Profile -> Edit Profile -->
+    <action
+        android:id="@+id/action_profile_to_editProfile"
+        app:destination="@id/editProfileFragment" />
+
+    <!-- Profile -> Notification -->
+    <action
+        android:id="@+id/action_profile_to_notification"
+        app:destination="@id/notificationFragment" />
+
+    <!-- Profile -> Address -->
+    <action
+        android:id="@+id/action_profile_to_address"
+        app:destination="@id/addressFragment" />
+
+    <!-- Profile -> Change Password -->
+    <action
+        android:id="@+id/action_profile_to_changePassword"
+        app:destination="@id/changePasswordFragment" />
+
+</fragment>
+<fragment
+    android:id="@+id/editProfileFragment"
+    android:name="com.example.practice3nav.ui.fragments.EditProfileFragment"
+    android:label="Edit Profile"
+    tools:layout="@layout/fragment_edit_profile" />
+<fragment
+    android:id="@+id/notificationFragment"
+    android:name="com.example.practice3nav.ui.fragments.NotificationFragment"
+    android:label="Notification"
+    tools:layout="@layout/fragment_notification" />
+<fragment
+    android:id="@+id/addressFragment"
+    android:name="com.example.practice3nav.ui.fragments.AddressFragment"
+    android:label="Shipping Address"
+    tools:layout="@layout/fragment_address" />
+<fragment
+    android:id="@+id/changePasswordFragment"
+    android:name="com.example.practice3nav.ui.fragments.ChangePasswordFragment"
+    android:label="Change Password"
+    tools:layout="@layout/fragment_change_password" />
+</navigation>

@@ -1,10 +1,12 @@
 package com.example.practice3nav.ui.fragments
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -20,6 +22,15 @@ class ProfileFragment : Fragment() {
 
     private val viewModel: ProfileViewModel by activityViewModels()
 
+    // 📸 Галереядан фото таңдау
+    private val pickImageLauncher =
+        registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
+            if (uri != null) {
+                viewModel.updateAvatar(uri)
+                binding.imgAvatar.setImageURI(uri)
+            }
+        }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -32,26 +43,31 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // 👤 Пайдаланушы деректері (алғашқы көрсетілім)
+        // 👤 Пайдаланушы деректері
         binding.tvName.text = viewModel.user.name
         binding.tvRole.text = "${viewModel.user.gender} • ${viewModel.user.email}"
 
-        // ✏️ Edit Profile → EditProfileFragment
+        // 📸 АВАТАРДЫ БАСҚАНДА — ФОТО ТАҢДАУ
+        binding.imgAvatar.setOnClickListener {
+            pickImageLauncher.launch("image/*")
+        }
+
+        // ✏️ Edit Profile
         binding.btnEditProfile.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_editProfile)
         }
 
-        // ✅ Notification → NotificationFragment
+        // 🔔 Notification
         binding.btnNotification.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_notification)
         }
 
-        // ✅ Shipping Address → AddressFragment
+        // 📦 Address
         binding.btnAddress.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_address)
         }
 
-        // ✅ Change Password → ChangePasswordFragment
+        // 🔒 Change Password
         binding.btnChangePassword.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_changePassword)
         }
@@ -64,7 +80,8 @@ class ProfileFragment : Fragment() {
 
         // 🌙 Dark / ☀ Light mode
         val currentMode = AppCompatDelegate.getDefaultNightMode()
-        binding.switchDarkMode.isChecked = currentMode == AppCompatDelegate.MODE_NIGHT_YES
+        binding.switchDarkMode.isChecked =
+            currentMode == AppCompatDelegate.MODE_NIGHT_YES
 
         binding.switchDarkMode.setOnCheckedChangeListener { _, isChecked ->
             val mode = if (isChecked)
@@ -76,11 +93,16 @@ class ProfileFragment : Fragment() {
         }
     }
 
-    // ✅ МІНЕ ОСЫ ЖЕР ҚОСЫЛДЫ: EditProfile-дан қайтқанда UI жаңарады
+    // ✅ ЭКРАНҒА ҚАЙТА КЕЛГЕНДЕ ФОТО + ДЕРЕК ЖАҢАРАДЫ
     override fun onResume() {
         super.onResume()
+
         binding.tvName.text = viewModel.user.name
         binding.tvRole.text = "${viewModel.user.gender} • ${viewModel.user.email}"
+
+        viewModel.avatarUri?.let {
+            binding.imgAvatar.setImageURI(it)
+        }
     }
 
     override fun onDestroyView() {

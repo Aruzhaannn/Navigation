@@ -1,7 +1,9 @@
 package com.example.practice3nav.viewmodel
 
+import android.net.Uri
 import androidx.lifecycle.ViewModel
 import com.example.practice3nav.model.User
+
 
 class ProfileViewModel : ViewModel() {
 
@@ -13,6 +15,14 @@ class ProfileViewModel : ViewModel() {
         email = "aru@example.com"
     )
         private set
+
+    // ✅ Аватар URI (галереядан таңдалған фото)
+    var avatarUri: Uri? = null
+        private set
+
+    fun updateAvatar(uri: Uri?) {
+        avatarUri = uri
+    }
 
     fun updateUser(
         name: String,

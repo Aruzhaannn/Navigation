@@ -4,10 +4,10 @@ package com.example.practice3nav.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.practice3nav.R;
@@ -21,7 +21,7 @@ import java.lang.String;
 
 public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final MaterialButton btnAddress;
@@ -59,13 +59,12 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final TextView tvTitle;
 
-  private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnAddress, @NonNull MaterialButton btnChangePassword,
-      @NonNull MaterialButton btnEditProfile, @NonNull MaterialButton btnNotification,
-      @NonNull MaterialButton btnSignOut, @NonNull MaterialCardView cardMenu,
-      @NonNull ShapeableImageView imgAvatar, @NonNull MaterialSwitch switchDarkMode,
-      @NonNull TextView tvName, @NonNull TextView tvRole, @NonNull TextView tvThemeLabel,
-      @NonNull TextView tvTitle) {
+  private FragmentProfileBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnAddress,
+      @NonNull MaterialButton btnChangePassword, @NonNull MaterialButton btnEditProfile,
+      @NonNull MaterialButton btnNotification, @NonNull MaterialButton btnSignOut,
+      @NonNull MaterialCardView cardMenu, @NonNull ShapeableImageView imgAvatar,
+      @NonNull MaterialSwitch switchDarkMode, @NonNull TextView tvName, @NonNull TextView tvRole,
+      @NonNull TextView tvThemeLabel, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnAddress = btnAddress;
     this.btnChangePassword = btnChangePassword;
@@ -83,7 +82,7 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -180,7 +179,7 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((ConstraintLayout) rootView, btnAddress, btnChangePassword,
+      return new FragmentProfileBinding((ScrollView) rootView, btnAddress, btnChangePassword,
           btnEditProfile, btnNotification, btnSignOut, cardMenu, imgAvatar, switchDarkMode, tvName,
           tvRole, tvThemeLabel, tvTitle);
     }

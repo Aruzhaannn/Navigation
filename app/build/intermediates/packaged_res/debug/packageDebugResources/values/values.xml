@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#2196F3</color>
+    <string name="address_title">Shipping Address</string>
+    <string name="app_name">Practice3 Navigation</string>
+    <string name="catalog_title">Каталог</string>
+    <string name="change_password_title">Change Password</string>
+    <string name="details_title">Детали</string>
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="field_email">Email</string>
+    <string name="field_gender">Gender</string>
+    <string name="field_name">Name</string>
+    <string name="field_phone">Phone Number</string>
+    <string name="field_username">Username</string>
+    <string name="menu_address">Shipping Address</string>
+    <string name="menu_change_password">Change Password</string>
+    <string name="menu_dark_mode">Dark mode</string>
+    <string name="menu_edit_profile">Edit Profile</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="notifications_title">Notification</string>
+    <string name="profile_avatar">Profile avatar</string>
+    <string name="profile_email">aru@example.com</string>
+    <string name="profile_name">Aruzhan Kozhakhmetova</string>
+    <string name="profile_role">Buyer</string>
+    <string name="profile_title">Профиль</string>
+    <string name="remove_fav">Убрать из избранного</string>
+    <string name="save">Save</string>
+    <string name="toggle_fav">В избранное</string>
+    <style name="Circle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="Theme.Practice3Nav" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
